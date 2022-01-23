@@ -1,4 +1,3 @@
-import { useReducer } from 'react';
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -21,7 +20,7 @@ const initialState = {
 
 // reducer uses the initialState as a default value. The reducer reads current state + action
 // updates the state per that action, and returns the next state.
-export const reducer = (state = initialState, action) => {
+export const reducers = (state = initialState, action) => {
   switch (action.type) {
     //the reducer typically looks at the action type field to determine what happens
     // returns a copy of state with an updated products array 
@@ -105,6 +104,4 @@ export const reducer = (state = initialState, action) => {
   }
 };
 
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState);
-}
+export default reducers;
