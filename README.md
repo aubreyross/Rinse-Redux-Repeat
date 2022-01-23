@@ -25,6 +25,9 @@ THEN I find that the app uses Redux instead of the Context API
 WHEN I review the way the app dispatches actions
 THEN I find that the app uses Redux instead of the Context API
 ```
+## URLs 
+* Deployed: https://rinse-redux-repeat.herokuapp.com/
+* Code: https://github.com/aubreyross/Rinse-Redux-Repeat
 
 ## Resources
 * https://redux.js.org/
